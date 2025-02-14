@@ -1,15 +1,15 @@
 {
-  "name": "@exercism/highlightjs-uiua",
-  "module": "src/uiua.ts",
-  "main": "src/uiua.js",
-  "types": "src/uiua.d.ts",
+  "name": "@exercism/highlightjs-jikiscript",
+  "module": "src/jikiscript.ts",
+  "main": "src/jikiscript.js",
+  "types": "src/jikiscript.d.ts",
   "type": "module",
   "version": "0.0.4",
   "author": {
-    "name": "Erik Schierboom"
+    "name": "Jeremy Walker"
   },
   "scripts": {
-    "prepublishOnly": "bun build --minify src/uiua.ts --outdir src",
+    "prepublishOnly": "bun build --minify src/jikiscript.ts --outdir src",
     "test": "bun test",
     "dev": "vite"
   },

@@ -2,16 +2,16 @@ import { describe, expect, test } from "bun:test";
 import { Glob } from "bun";
 import Path from "path";
 import hljs from "highlight.js";
-import hljsDefineUiua from "../src/uiua";
+import hljsDefineJikiScript from "../src/jikiscript";
 
-hljs.registerLanguage("uiua", hljsDefineUiua);
+hljs.registerLanguage("jikiscript", hljsDefineJikiScript);
 
 test("detect", async () => {
   const code = await Bun.file(
     Path.join(__dirname, "detect", "default.txt")
   ).text();
   const actual = hljs.highlightAuto(code).language;
-  expect(actual).toBe("uiua");
+  expect(actual).toBe("jikiscript");
 });
 
 describe("markup", async () => {
@@ -24,7 +24,7 @@ describe("markup", async () => {
 
     test(path.name, async () => {
       const actual = hljs.highlight(await Bun.file(filePath).text(), {
-        language: "uiua",
+        language: "jikiscript",
       });
       const expected = await Bun.file(toExpectedPath(path)).text();
       expect(actual.value.trim()).toBe(expected.trim());

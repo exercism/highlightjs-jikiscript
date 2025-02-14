@@ -1,35 +1,66 @@
-# highlightjs-uiua middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/exercism/highlightjs-uiua/blob/main/LICENSE) [![npm version](https://img.shields.io/npm/v/@exercism/highlightjs-uiua.svg?style=flat)](https://www.npmjs.com/package/@exercism/highlightjs-uiua)
+# JikiScript language support for Highlightjs
 
-This repository contains a highlightjs plugin for the [Uiua language](https://www.uiua.org/).
+![NPM Version](https://img.shields.io/npm/v/@exercism/highlightjs-jikiscript)
 
-## Installation
+This repo contains the grammar for the JikiScript language.
+The repo comes with a tiny grammar that shows some basic grammar that you can tweak for your purposes.
 
-To install the package, run:
+⚠️ To ensure that the package can be integrated on the Exercism website, don't change the packages' versions:
 
-```shell
-npm install @exercism/highlightjs-uiua
+```json
+"highlight.js": "^11.10.0"
 ```
 
-## Publish on NPM
+## Install
 
-To publish the package, run:
+- NPM: `npm install @exercism/highlightjs-jikiscript`
+- Yarn: `yarn add @exercism/highlightjs-jikiscript`
+- Bun: `bun add @exercism/highlightjs-jikiscript`
 
-```shell
-bun publish
+## Prerequisites
+
+- [Bun](https://bun.sh/)
+
+## Structure
+
+The repo's source files are defined in [TypeScript](https://www.typescriptlang.org/).
+
+The repo is structured as follows:
+
+```text
+.
+├── src
+│   ├── index.ts (the main plugin)
+│   ├── syntax.grammar (the Lezer grammar)
+│   └── syntax.grammar.d.ts (the grammar typings)
+├── test
+│   ├── cases (test cases)
+│   │   └ *.txt (test case)
+│   └── grammar.test.ts (test file)
+├── index.html (dev server file)
+├── rollup.config.js (bundling config)
+├── tsconfig.json (typescript confif)
+└── vite.config.js (vite dev server config)
 ```
 
-## Local development
+## Setup
 
-First, install the dependencies:
+Run `bun install` to install all dependencies.
 
-```shell
-bun install
-```
+## Developing
 
-Then run:
+To help with development, run `bun run dev`.
+This will start a [Vite](https://vite.dev/) dev server (usually at http://localhost:5173/) that renders the `index.html` file.
+The `#editor` element gets populated with some sample source code of your choosing and then it will get transformed by the grammar defined in `src/syntax.grammar`.
+Any changes to the grammar will auto-refresh the dev server's rendered contents.
 
-```shell
-bun dev
-```
+## Testing
 
-This will start a [Vite dev server](https://vite.dev/) that contains some Uiua code and some highlighted text.
+The `test/cases` directory contains the tests files.
+Run `bun test` to run these tests.
+
+Note: test (case) files should be relatively small and focus on a single aspect of a grammar.
+
+## Publishing
+
+Run `bun publish` to publish the plugin to NPM.
