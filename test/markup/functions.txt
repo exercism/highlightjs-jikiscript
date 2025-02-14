@@ -1,0 +1,4 @@
+Cube ← ××..
+Cube = (××..)
+TimesThree ← |1.1 ×3
+TimesThree ← |1 ×3

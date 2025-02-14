@@ -1,0 +1,30 @@
+# Numbers
+5 6e3 0 3.2 3/4 ¯2/¯4 ¯1.1 η π τ ∞
+
+# Characters
+@a @Z @  @\n @\s @\xae @\x1F @\u2665 @\u{1f600}
+
+# Arrays
+[] [1 2 3] 1_2_3 [1_2 3_4]
+{} {1 {2 3}}
+
+# Strings
+"Hello, world!"
+"Hello,\sworld!"
+"Hello, \"world\"!"
+
+$"Hello _ !" "World"
+$ Hello _ !
+$$ Hello _ !
+
+# Identifiers
+Name Age__1 X y
+
+# Functions
+Cube ← ××..
+Cube = (××..)
+TimesThree ← |1.1 ×3
+TimesThree ← |1 ×3
+
+# Glyphs
+◠ ⌵ + ⌝ ’ ⍤ ∠ ˜ ◡ ⋯ ∩ □ ⊓ ⊸ ⍩ ⌈ ⑄ ⊛ ℂ ◇ ⊟ ◴ ∂ ♭ ⊙ ÷ ⍢ ↘ . ∵ = ⍖ ⬚ ⌕ ⊢ ¤ : ⌊ ∧ ⊃ ⋅ ≥ &gt; ⊕ ∘ ⊗ ∫ ⍚ ⊂ ▽ ⊣ ⧻ ≤ &lt; ₙ ⦷ ≍ ↥ ∊ ∈ ↧ ◿ × ¯ ¬ ≠ ⌅ ⤚ ⟜ ⤸  ⋕ ⊜ ⊡ ◌ ⁿ ⚂ ⇡ / ⍥ ☇ ↯ ⇌ ⍏ ↻ ⁅ ≡ \\ ⊏ △ ± ∿ ⍆ √ ? - ⨬ ⊞ ↙ ⸮ ⍉ ◹ ⍣ ⧅ ° ⍜ ◰ ⊚ ◫ ⤙

@@ -1,0 +1,7 @@
+<span class="hljs-string">&quot;Hello, world!&quot;</span>
+<span class="hljs-string">&quot;Hello,\sworld!&quot;</span>
+<span class="hljs-string">&quot;Hello, \&quot;world\&quot;!&quot;</span>
+
+<span class="hljs-string">$&quot;Hello <span class="hljs-subst">_</span> !&quot;</span> <span class="hljs-string">&quot;World&quot;</span>
+<span class="hljs-string">$ Hello _ !</span>
+<span class="hljs-string">$$ Hello <span class="hljs-subst">_</span> !</span>

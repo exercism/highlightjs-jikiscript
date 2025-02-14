@@ -1,0 +1,4 @@
+<span class="hljs-title function_ invoke__">Cube</span> <span class="hljs-built_in">←</span> <span class="hljs-built_in">×</span><span class="hljs-built_in">×</span><span class="hljs-built_in">.</span><span class="hljs-built_in">.</span>
+<span class="hljs-title function_ invoke__">Cube</span> <span class="hljs-built_in">=</span> <span class="hljs-punctuation">(</span><span class="hljs-built_in">×</span><span class="hljs-built_in">×</span><span class="hljs-built_in">.</span><span class="hljs-built_in">.</span><span class="hljs-punctuation">)</span>
+<span class="hljs-title function_ invoke__">TimesThree</span> <span class="hljs-built_in">←</span> <span class="hljs-meta">|1.1</span> <span class="hljs-built_in">×</span><span class="hljs-number">3</span>
+<span class="hljs-title function_ invoke__">TimesThree</span> <span class="hljs-built_in">←</span> <span class="hljs-meta">|1</span> <span class="hljs-built_in">×</span><span class="hljs-number">3</span>
