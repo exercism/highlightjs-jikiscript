@@ -19,7 +19,7 @@ export default function (hljs: HLJSApi): Language {
   const KEYWORDS = {
     controlKeyword: "repeat times repeat_until_game_over repeat_forever for each in with to return",
     definitionKeyword: "function set change",
-    logicOperator: "and or is equals",
+    logicOperator: "and or is equals not",
     keyword: 'log do end for each if else function with set change to',
     literal: ['false','true'],
   }
@@ -34,7 +34,7 @@ export default function (hljs: HLJSApi): Language {
     className: "bool"
   };
 
-  const OPERATORS =  "> < >= <= == !="
+  const OPERATORS =  "> < >= <= == != !"
   const OPERATOR: Mode = {
     relevance: 0,
     match: hljs.regex.either(...OPERATORS),
