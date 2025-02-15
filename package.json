@@ -1,15 +1,18 @@
 {
   "name": "@exercism/highlightjs-jikiscript",
-  "module": "src/jikiscript.ts",
-  "main": "src/jikiscript.js",
-  "types": "src/jikiscript.d.ts",
+  "module": "dist/jikiscript.ts",
+  "main": "dist/jikiscript.js",
+  "types": "dist/jikiscript.d.ts",
   "type": "module",
-  "version": "0.0.4",
+  "version": "0.0.2",
   "author": {
     "name": "Jeremy Walker"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
-    "prepublishOnly": "bun build --minify src/jikiscript.ts --outdir src",
+    "prepublishOnly": "bun build --minify src/jikiscript.ts --outdir dist",
     "test": "bun test",
     "dev": "vite"
   },
